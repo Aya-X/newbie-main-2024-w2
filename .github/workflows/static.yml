@@ -45,6 +45,7 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           enablement: true
+          token: ${{ secrets.DEPLOY_SECRET }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
