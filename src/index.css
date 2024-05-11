@@ -5,3 +5,21 @@
 a {
   @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
 }
+
+figure {
+  @apply flex overflow-hidden;
+}
+
+.my-container {
+  @apply max-w-[1272px] mx-auto px-3;
+}
+
+@media (max-width: 768px) {
+  .my-container {
+    @apply max-w-[351px];
+  }
+}
+
+.ff-noto {
+  font-family: 'Noto Sans', sans-serif;
+}
