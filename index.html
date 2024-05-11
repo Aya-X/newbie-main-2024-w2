@@ -5,14 +5,255 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <title>Vite App</title>
 </head>
 
 <body>
-  <div id="app"
+  <!-- <div id="app"
     class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100">
+  </div> -->
 
+  <div id="app" class="leading-normal ff-noto">
+    <main class="my-container mb-18">
+      <ul class="flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-6">
+        <!-- Card 1 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-300 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image1.png"
+              alt="星際旅行訂票平台" />
+          </figure>
+
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              星際旅行訂票平台
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              悠遊宇宙的夢想，從這裡開始實現
+            </p>
+
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  網頁設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  響應式設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  Bootstrap
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image2.png"
+              alt="理財 App" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight text-xl truncate md:text-2xl">
+              理財 App
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              連動帳戶與行動支付，讓 AI 提供您最好的理財建議
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  APP 設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  iOS
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  React
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image3.png"
+              alt="醫美診所官網" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              醫美診所官網
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              永保青春的秘密，從粹究開始
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  網頁設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  響應式設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  WordPress
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image4.png"
+              alt="美美美早餐店 POS 機 UI Design" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              美美美早餐店 POS 機 UI Design
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              訂單送單一目瞭然，自動報表分析好輕鬆
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  UI 設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  前端開發
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  Wix
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 5 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image5.png"
+              alt="電影院訂票系統" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              電影院訂票系統
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              三步驟完成訂票，電腦手機都支援
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  前端開發
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  後端支援
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  Vue
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 6 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image6.png"
+              alt="巧克巧克形象官網設計" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              巧克巧克形象官網設計
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              三步驟完成訂票，電腦手機都支援
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  UI 設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  設計系統
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  網路電商
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!-- end of work-list -->
   </div>
 
   <script type="module" src="./src/main.js"></script>
