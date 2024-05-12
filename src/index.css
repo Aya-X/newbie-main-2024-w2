@@ -23,12 +23,12 @@ figure {
 }
 
 .my-container {
-  @apply max-w-[1272px] mx-auto px-3;
+  @apply max-w-[1296px] mx-auto px-3;
 }
 
 @media (max-width: 768px) {
   .my-container {
-    @apply max-w-[351px];
+    @apply max-w-[375px];
   }
 }
 
