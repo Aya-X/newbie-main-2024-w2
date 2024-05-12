@@ -10,8 +10,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-  <title>Vite App</title>
+  <title>Noel | BLOG</title>
 </head>
 
 <body>
@@ -20,6 +22,150 @@
   </div> -->
 
   <div id="app" class="leading-normal ff-noto text-[--primary-700]">
+    <nav class="md:border-b borber-[--primary-200]">
+      <div class="h-14 md:h-24 border-b borber-[--primary-200]">
+        <div
+          class="my-container py-2 flex items-center justify-between md:py-8">
+          <a href="#">
+            <h1 class="logo">Noel</h1>
+          </a>
+
+          <div class="hidden md:flex md:flex-grow md:justify-center">
+            <ul class="ml-10 flex items-baseline space-x-4 text-center">
+              <li><a href="#"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">首頁</a>
+              </li>
+              <li><a href="#"
+                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
+                  <span
+                    class="absolute top-0 left-0 before:content-[''] before:absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                      viewBox="0 0 9 10" fill="none">
+                      <path d="M0.5 9L0.5 1L8.5 1" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <span
+                    class="absolute bottom-0 left-0 after:content-[''] after:absolute"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                      viewBox="0 0 9 10" fill="none">
+                      <path d="M8.5 9L0.5 9L0.500001 0.999999" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg></span>
+                  作品集
+                  <span
+                    class="absolute top-0 right-0 before:content-[''] before:absolute"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                      viewBox="0 0 9 10" fill="none">
+                      <path d="M0.5 1H8.5V9" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg></span>
+                  <span
+                    class="absolute bottom-0 right-0 before:content-[''] before:absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9"
+                      height="10" viewBox="0 0 9 10" fill="none">
+                      <path d="M8.5 1L8.5 9L0.5 9" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                </a>
+
+              </li>
+              <li><a href="#"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">服務項目</a>
+              </li>
+              <li><a href="#"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">部落格</a>
+              </li>
+              <li><a href="#"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">聯絡我</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="-mr-2 flex md:hidden">
+            <button type="button" id="js-mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+
+              <span id="js-hamburger-button"
+                class="material-symbols-outlined hidden h-6 w-6 transition-transform duration-300">
+                menu
+              </span>
+
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+
+              <span id="js-hamburger-close-button"
+                class="material-symbols-outlined block h-6 w-6 transition-transform duration-300">
+                close
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="md:hidden" id="js-mobile-menu">
+        <ul class="py-10 space-y-6 sm:px-3 text-xl">
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">首頁</a>
+          </li>
+          <li><a href="#"
+              class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
+              <span
+                class="absolute top-0 left-[40%] before:content-[''] before:absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M0.5 9L0.5 1L8.5 1" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <span
+                class="absolute bottom-0 left-[40%] after:content-[''] after:absolute"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M8.5 9L0.5 9L0.500001 0.999999" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg></span>
+              作品集
+              <span
+                class="absolute top-0 right-[40%] before:content-[''] before:absolute"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M0.5 1H8.5V9" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg></span>
+              <span
+                class="absolute bottom-0 right-[40%] before:content-[''] before:absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M8.5 1L8.5 9L0.5 9" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+            </a>
+
+          </li>
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">服務項目</a>
+          </li>
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">部落格</a>
+          </li>
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">聯絡我</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <main class="my-container mb-20 md:mb-[120px]">
       <ul
         class="mb-12 flex flex-col gap-12 md:mb-18 md:grid md:grid-cols-2 md:gap-6">
@@ -324,6 +470,21 @@
   </div>
 
   <script type="module" src="./src/main.js"></script>
+  <script>
+    const menuBtn = document.querySelector("#js-mobile-menu-button");
+    const menu = document.querySelector("#js-mobile-menu");
+
+    const hamburgerBtn = document.querySelector('#js-hamburger-button');
+    const closeBtn = document.querySelector('#js-hamburger-close-button');
+
+    if (menuBtn) {
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        hamburgerBtn.classList.toggle('hidden');
+        closeBtn.classList.toggle('hidden');
+      });
+    }
+  </script>
 </body>
 
 </html>

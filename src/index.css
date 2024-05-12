@@ -32,6 +32,10 @@ figure {
   }
 }
 
+.logo {
+  @apply w-[72px] h-8 bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg)] bg-center bg-cover bg-no-repeat overflow-hidden whitespace-nowrap indent-[101%];
+}
+
 .ff-noto {
   font-family: 'Noto Sans', sans-serif;
 }
