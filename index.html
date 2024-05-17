@@ -29,11 +29,7 @@
           <div class="hidden md:flex md:flex-grow md:justify-center">
             <ul class="ml-10 flex items-baseline space-x-4 text-center">
               <li><a href="/"
-                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">首頁</a>
-              </li>
-              <li><a href="./portfolio.html"
-                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
-                  <span
+                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center"><span
                     class="absolute top-0 left-0 before:content-[''] before:absolute">
                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
                       viewBox="0 0 9 10" fill="none">
@@ -47,9 +43,7 @@
                       viewBox="0 0 9 10" fill="none">
                       <path d="M8.5 9L0.5 9L0.500001 0.999999" stroke="#919191"
                         stroke-linecap="round" />
-                    </svg></span>
-                  作品集
-                  <span
+                    </svg></span>首頁<span
                     class="absolute top-0 right-0 before:content-[''] before:absolute"><svg
                       xmlns="http://www.w3.org/2000/svg" width="9" height="10"
                       viewBox="0 0 9 10" fill="none">
@@ -63,9 +57,13 @@
                       <path d="M8.5 1L8.5 9L0.5 9" stroke="#919191"
                         stroke-linecap="round" />
                     </svg>
-                  </span>
-                </a>
+                  </span></a>
+              </li>
 
+              <li><a href="./portfolio.html"
+                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
+                  作品集
+                </a>
               </li>
               <li><a href="#"
                   class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">服務項目</a>
@@ -161,6 +159,73 @@
         </ul>
       </div>
     </nav>
+
+    <div class="mb-10 md:h-[calc(100vh_-_96px)] md:mb-[120px]">
+      <div
+        class="flex flex-col items-center justify-end md:flex-row-reverse md:gap-6">
+        <picture>
+          <source media="(min-width: 768px)"
+            srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/hero-lg.png">
+          <source media="(min-width: 375px)" class="h-[250px]"
+            srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/hero-sm.png">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/hero-lg.png"
+            alt="hero">
+        </picture>
+
+        <div class="w-[75%] md:w-[52%]">
+          <div class="my-container py-10 text-center md:text-left">
+            <h2
+              class="mb-6 text-[32px] font-bold leading-[120%] md:text-[40px] md:font-semibold">
+              Hi！我是 Noel
+            </h2>
+
+            <div class="mb-4 text-xl text-[--primary-600]">
+              <p class="mb-2 relative inline-block">具有 10 年經驗的
+                <span class="relative inline-block">
+                  資深UI設計師
+                  <span
+                    class="absolute inset-x-0 bottom-0 h-2 bg-[url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png')] bg-no-repeat bg-cover bg-center -z-10"></span>
+                </span>
+                <span class="relative inline-block">兼</span>
+                <span class="relative inline-block">
+                  前端工程師
+                  <span
+                    class="absolute inset-x-0 bottom-0 h-2 bg-[url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png')] bg-no-repeat bg-cover bg-center -z-10"></span>
+                </span>
+              </p>
+
+              <p>技術雙修並行，<br class="md:hidden">熱衷於優化使用者的網頁體驗</p>
+            </div>
+
+            <p class="mb-6 text-[--primary-400] md:mb-[60px]">WEB DEVELOPMENT /
+              BRANDING /
+              UI / UX / APP DESIGN</p>
+
+            <ul class="flex justify-center items-center gap-4 md:justify-start">
+              <li><a href="https://www.instagram.com/hexschool" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="w-10 h-10"
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg"
+                    alt="IG">
+                </a></li>
+              <li><a href="https://www.facebook.com/hexschool" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="w-10 h-10"
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/facebook.svg"
+                    alt="FB">
+                </a></li>
+              <li><a href="https://www.youtube.com/@hexschool" target="_blank"
+                  rel="noopener noreferrer">
+                  <img class="w-10 h-10"
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/youtube.svg"
+                    alt="YT">
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer
       class="bg-[--primary-100] bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-sm.png)] bg-center bg-cover bg-no-repeat md:bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-lg.png)]">
