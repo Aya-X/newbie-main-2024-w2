@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   outline: 1px solid #f73;
-}
+} */
 
 :root {
   --primary-900: #000000;
