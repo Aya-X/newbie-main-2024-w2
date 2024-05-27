@@ -18,6 +18,11 @@
   --primary-100: #fafafa;
 }
 
+/** #NOTES: change width of swiper-slide */
+ul .swiper-slide {
+  @apply md:w-[calc(33%_-_16px)] md:flex md:justify-center md:items-center;
+}
+
 .scrollbar::-webkit-scrollbar {
   @apply w-3 h-3;
 }
