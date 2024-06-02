@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <title>Portfolio | Noel</title>
+</head>
+
+<body>
+  <div id="app" class="leading-normal ff-noto text-[--primary-700]">
+    <nav class="md:border-b borber-[--primary-200]">
+      <div class="h-14 md:h-24 border-b borber-[--primary-200]">
+        <div
+          class="my-container py-2 flex items-center justify-between md:py-8">
+          <a href="#">
+            <h1 class="logo">Noel</h1>
+          </a>
+
+          <div class="hidden md:flex md:flex-grow md:justify-center">
+            <ul class="ml-10 flex items-baseline space-x-4 text-center">
+              <li><a href="/"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">首頁</a>
+              </li>
+              <li><a href="./portfolio.html"
+                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
+                  <span
+                    class="absolute top-0 left-0 before:content-[''] before:absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                      viewBox="0 0 9 10" fill="none">
+                      <path d="M0.5 9L0.5 1L8.5 1" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <span
+                    class="absolute bottom-0 left-0 after:content-[''] after:absolute"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                      viewBox="0 0 9 10" fill="none">
+                      <path d="M8.5 9L0.5 9L0.500001 0.999999" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg></span>
+                  作品集
+                  <span
+                    class="absolute top-0 right-0 before:content-[''] before:absolute"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                      viewBox="0 0 9 10" fill="none">
+                      <path d="M0.5 1H8.5V9" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg></span>
+                  <span
+                    class="absolute bottom-0 right-0 before:content-[''] before:absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9"
+                      height="10" viewBox="0 0 9 10" fill="none">
+                      <path d="M8.5 1L8.5 9L0.5 9" stroke="#919191"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                </a>
+
+              </li>
+              <li><a href="#"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">服務項目</a>
+              </li>
+              <li><a href="#"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">部落格</a>
+              </li>
+              <li><a href="#"
+                  class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">聯絡我</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="-mr-2 flex md:hidden">
+            <button type="button" id="js-mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+
+              <span id="js-hamburger-button"
+                class="material-symbols-outlined hidden h-6 w-6 transition-transform duration-300">
+                menu
+              </span>
+
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+
+              <span id="js-hamburger-close-button"
+                class="material-symbols-outlined block h-6 w-6 transition-transform duration-300">
+                close
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="md:hidden" id="js-mobile-menu">
+        <ul class="py-10 space-y-6 sm:px-3 text-xl">
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">首頁</a>
+          </li>
+          <li><a href="#"
+              class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
+              <span
+                class="absolute top-0 left-[40%] before:content-[''] before:absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M0.5 9L0.5 1L8.5 1" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <span
+                class="absolute bottom-0 left-[40%] after:content-[''] after:absolute"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M8.5 9L0.5 9L0.500001 0.999999" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg></span>
+              作品集
+              <span
+                class="absolute top-0 right-[40%] before:content-[''] before:absolute"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M0.5 1H8.5V9" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg></span>
+              <span
+                class="absolute bottom-0 right-[40%] before:content-[''] before:absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                  viewBox="0 0 9 10" fill="none">
+                  <path d="M8.5 1L8.5 9L0.5 9" stroke="#919191"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+            </a>
+
+          </li>
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">服務項目</a>
+          </li>
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">部落格</a>
+          </li>
+          <li><a href="#"
+              class="text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">聯絡我</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="h-[calc(100vh_-_56px)] pt-10 pb-20 bg-[--primary-100] md:h-[calc(100vh_-_96px)] md:pt-20">
+      <div class="my-container flex flex-col justify-center items-center">
+        <div
+          class="relative mb-10 text-xl text-center md:mb-24 md:text-2xl md:leading-5 md:items-start ">
+          <img class="relative left-[40%] w-16 h-16 md:w-18 md:h-18 md:left-0"
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/quote-left.png"
+            alt="quote-left">
+
+          <div class="md:pl-16">
+            <p class="relative mb-2 md:mb-4">讓使用者在觀賞與使用的旅程中，<br
+                class="md:hidden" />
+              發現設計的價值<span
+                class="block w-[148px] h-1 bottom-0 right-0 after:content-[''] after:absolute after:w-[148px] after:h-2 after:right-10 md:after:-right-6 after:bottom-0 md:after:-bottom-1 after:bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png)] after:bg-no-repeat after:bg-cover after:bg-center"></span>
+            </p>
+            <p>而我在設計與開發的過程中，<br class="md:hidden" />
+              看見自己的價值<span
+                class="block w-[148px] h-1 bottom-0 right-0 after:content-[''] after:absolute after:w-[148px] after:h-2 after:right-10 after:bottom-0 md:after:-right-1 md:after:-bottom-1 after:bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png)] after:bg-no-repeat after:bg-cover after:bg-center"></span>
+            </p>
+          </div>
+
+          <img
+            class="hidden md:block md:absolute md:-right-16 md:-rotate-180 md:w-18 md:h-18"
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/quote-left.png"
+            alt="quote-left">
+        </div>
+
+        <div
+          class="w-[62%] flex flex-col justify-center items-center gap-5 text-center md:gap-10 md:flex-row">
+          <div>
+            <p
+              class="mb-2 text-[--primary-600] relative after:content-[''] after:absolute after:left-[44%] md:after:left-[40%] after:block after:w-6 after:h-[2px] after:bg-[--primary-400]">
+              2B 經驗</p>
+            <p class="text-[--primary-700]">內部監控系統、庫存系統、採購系統、行銷整合系統</p>
+          </div>
+
+          <div>
+            <p
+              class="mb-2 text-[--primary-600] relative after:content-[''] after:absolute after:left-[44%] md:after:left-[40%] after:block after:w-6 after:h-[2px] after:bg-[--primary-400]">
+              2C 經驗</p>
+            <p class="text-[--primary-700]">跨國美妝保養電商、個人品牌網站、醫美網站、電子商務</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="my-container mb-20 md:mb-[120px]">
+      <ul
+        class="mb-12 flex flex-col gap-12 md:mb-18 md:grid md:grid-cols-2 md:gap-6">
+        <!-- Card 1 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-300 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image1.png"
+              alt="星際旅行訂票平台" />
+          </figure>
+
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              星際旅行訂票平台
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              悠遊宇宙的夢想，從這裡開始實現
+            </p>
+
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  網頁設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  響應式設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  Bootstrap
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image2.png"
+              alt="理財 App" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight text-xl truncate md:text-2xl">
+              理財 App
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              連動帳戶與行動支付，讓 AI 提供您最好的理財建議
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  APP 設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  iOS
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  React
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image3.png"
+              alt="醫美診所官網" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              醫美診所官網
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              永保青春的秘密，從粹究開始
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  網頁設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  響應式設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  WordPress
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image4.png"
+              alt="美美美早餐店 POS 機 UI Design" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              美美美早餐店 POS 機 UI Design
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              訂單送單一目瞭然，自動報表分析好輕鬆
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  UI 設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  前端開發
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  Wix
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 5 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image5.png"
+              alt="電影院訂票系統" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              電影院訂票系統
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              三步驟完成訂票，電腦手機都支援
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  前端開發
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  後端支援
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  Vue
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Card 6 -->
+        <li>
+          <figure class="mb-4 rounded-lg outline outline-1 outline-gray-200">
+            <img class="transition duration-700 ease-linear hover:scale-105"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/work-image6.png"
+              alt="巧克巧克形象官網設計" />
+          </figure>
+          <div class="px-4">
+            <h3
+              class="mb-2 font-bold leading-tight truncate text-xl md:text-2xl">
+              巧克巧克形象官網設計
+            </h3>
+            <p class="mb-4 truncate text-gray-500 md:mb-6">
+              三步驟完成訂票，電腦手機都支援
+            </p>
+            <ul class="flex gap-2 md:gap-4">
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  UI 設計
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  設計系統
+                </p>
+              </li>
+              <li>
+                <p
+                  class="rounded-2xl bg-gray-200 px-3 py-1 truncate transition duration-300 ease-linear hover:bg-gray-400 hover:text-white">
+                  網路電商
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="flex justify-center items-center">
+        <ul class="flex gap-4 text-center text-2xl">
+          <li>
+            <button type="button"
+              class="flex justify-center items-center w-10 h-10 rounded bg-[--primary-800] text-white">
+              1</button>
+          </li>
+          <li>
+            <button type="button"
+              class="flex justify-center items-center w-10 h-10 rounded hover:border">
+              2</button>
+          </li>
+          <li>
+            <button type="button"
+              class="flex justify-center items-center w-10 h-10 rounded hover:border">
+              3</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- end of work-list -->
+
+    <footer
+      class="bg-[--primary-100] bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-sm.png)] bg-center bg-cover bg-no-repeat md:bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-lg.png)]">
+      <div
+        class="my-container py-10 md:flex md:justify-between md:items-center md:py-20">
+        <div class="mb-10 flex flex-col items-center gap-6 md:items-start">
+          <a href="#" title="Noel"><img class="w-[120px] h-[54px] object-cover"
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg"
+              alt="LOGO"></a>
+
+          <div>
+            <p>若有數位產品設計和開發相關問題</p>
+            <p>歡迎填寫表單，或直接與我聯絡！</p>
+          </div>
+
+          <a class="text-[--primary-500] hover:underline"
+            href="mailto:service@hexschool.com"
+            title="contact">service@hexschool.com</a>
+        </div>
+
+        <ul class="flex flex-col items-center gap-6 text-xl">
+          <li><a
+              class="flex items-center gap-2 w-[306px] px-6 py-1 rounded-lg border border-[--primary-400] text-[--primary-700] bg-[--primary-900] text-white font-bold"
+              href="https://hex.school/P12UP" target="_blank"
+              rel="noopener noreferrer">
+              <img class="w-14 h-14"
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/list.svg"
+                alt="form">填寫表單</a>
+          </li>
+          <li><a
+              class="flex items-center gap-2 w-[306px] px-6 py-1 rounded-lg border border-[--primary-400] text-[--primary-700]"
+              href="https://www.instagram.com/hexschool/" target="_blank"
+              rel="noopener noreferrer"><img class="w-14 h-14"
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/instagram.svg"
+                alt="form">hexschool_demo</a>
+          </li>
+          <li><a
+              class="flex items-center gap-2 w-[306px] px-6 py-1 rounded-lg border border-[--primary-400] text-[--primary-700]"
+              href="https://www.facebook.com/hexschool" target="_blank"
+              rel="noopener noreferrer"><img class="w-14 h-14"
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/facebook.svg"
+                alt="form">hexschoolTW</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+  <script>
+    const menuBtn = document.querySelector("#js-mobile-menu-button");
+    const menu = document.querySelector("#js-mobile-menu");
+
+    const hamburgerBtn = document.querySelector('#js-hamburger-button');
+    const closeBtn = document.querySelector('#js-hamburger-close-button');
+
+    if (menuBtn) {
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        hamburgerBtn.classList.toggle('hidden');
+        closeBtn.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+
+</html>

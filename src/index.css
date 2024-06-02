@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+  outline: 1px solid #f73;
+} */
+
 :root {
   --primary-900: #000000;
   --primary-800: #1e1e1e;
@@ -12,6 +16,27 @@
   --primary-300: #e9e9e9;
   --primary-200: #f1f1f1;
   --primary-100: #fafafa;
+}
+
+/** #NOTES: change width of swiper-slide */
+ul .swiper-slide {
+  @apply md:w-[calc(33%_-_16px)] md:flex md:justify-center md:items-center;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-3 h-3;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-[--primary-200];
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-[--primary-700] rounded border-2 border-[--primary-200];
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-[--primary-600];
 }
 
 a {
@@ -34,6 +59,24 @@ figure {
 
 .logo {
   @apply w-[72px] h-8 bg-[url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg)] bg-center bg-cover bg-no-repeat overflow-hidden whitespace-nowrap indent-[101%];
+}
+
+.bg-custom-black-gradient {
+  background-image: linear-gradient(
+    315deg,
+    var(--primary-800) 0%,
+    var(--primary-800) 49.97%,
+    var(--primary-900) 50%
+  );
+
+  &:hover {
+    background-image: linear-gradient(
+      315deg,
+      var(--primary-600) 0%,
+      var(--primary-600) 49.97%,
+      var(--primary-700) 50%
+    );
+  }
 }
 
 .ff-noto {
