@@ -30,7 +30,7 @@
           <div class="hidden md:flex md:flex-grow md:justify-center">
             <ul class="ml-10 flex items-baseline space-x-4 text-center">
               <li><a href="/"
-                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center"><span
+                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold"><span
                     class="absolute top-0 left-0 before:content-[''] before:absolute">
                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
                       viewBox="0 0 9 10" fill="none">
@@ -62,7 +62,7 @@
               </li>
 
               <li><a href="./portfolio.html"
-                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
+                  class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">
                   作品集
                 </a>
               </li>
@@ -107,10 +107,11 @@
       </div>
 
       <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="md:hidden" id="js-mobile-menu">
+      <div class="absolute h-auto w-full bg-white z-50 md:hidden"
+        id="js-mobile-menu">
         <ul class="py-10 space-y-6 sm:px-3 text-xl">
           <li><a href="#"
-              class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center"><span
+              class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold"><span
                 class="absolute top-0 left-[40%] before:content-[''] before:absolute">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
                   viewBox="0 0 9 10" fill="none">
@@ -142,7 +143,7 @@
               </span></a>
           </li>
           <li><a href="#"
-              class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center font-bold">
+              class="relative text-[--primary-900] hover:no-underline block px-2 py-1 rounded-md text-center">
               作品集
             </a>
 
